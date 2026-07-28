@@ -35,27 +35,27 @@ const skills = {
   Languages: {
     icon: <Code2 size={20} />,
     color: "#A855F7",
-    items: ["Java", "SQL", "JavaScript"],
+    items: ["C++", "Python", "JavaScript/TypeScript", "SQL"],
   },
-  Frameworks: {
+  Development: {
     icon: <Layers size={20} />,
     color: "#EC4899",
-    items: ["Spring Boot", "Spring MVC", "Spring Security", "Hibernate", "JPA"],
-  },
-  Frontend: {
-    icon: <Globe size={20} />,
-    color: "#34D399",
-    items: ["HTML", "React", "CSS", "Bootstrap", "Thymeleaf"],
+    items: ["Next JS", "React JS", "Tailwind CSS", "Node JS", "Express JS"],
   },
   Database: {
+    icon: <Globe size={20} />,
+    color: "#34D399",
+    items: ["MySQL", "PostgreSQL", "MongoDB"],
+  },
+  Programming: {
     icon: <Database size={20} />,
     color: "#F472B6",
-    items: ["MySQL", "PostgreSQL", "MongoDB"],
+    items: ["DSA", "OOPs", "Competetive Programming", "AI/ML"],
   },
   Tools: {
     icon: <Wrench size={20} />,
     color: "#FBBF24",
-    items: ["Git", "GitHub", "IntelliJ IDEA", "Maven", "Postman"],
+    items: ["GitHub", "Canva", "Postman"],
   },
 };
 
@@ -794,7 +794,7 @@ function About() {
       company: "Dataman Computer Systems Pvt. Ltd.",
       period: "2025 – Present",
       duration: "1 Year",
-      desc: "Developed and maintained ERP Software for Paper Industry serving 50k+ users. Led REST API design for 3 client-facing products. Reduced query response time by 40% through Hibernate optimization.",
+      desc: "Developed and maintained ERP Software for Paper Industry serving 50k+ users. Led REST API design for 3 client-facing products. Reduced query response time by 40%. Built modern UI/UX using Next JS and Tailwind CSS",
       achievements: [
         "50k+ users served",
         "40% query optimization",
@@ -997,17 +997,17 @@ function About() {
 
 function Skills() {
   const skillLevels: Record<string, Record<string, number>> = {
-    Languages: { Java: 90, SQL: 82, JavaScript: 65 },
-    Frameworks: {
-      "Spring Boot": 88,
-      "Spring MVC": 82,
-      "Spring Security": 75,
-      Hibernate: 78,
-      JPA: 76,
+    Languages: { "C++": 90, Python: 80, "JavaScript/TypeScript": 80 , SQL:90},
+    Development: {
+      "Next JS": 90,
+      "React JS": 88,
+      "Tailwind CSS": 80,
+      "Node JS": 90,
+      "Express JS": 95,
     },
-    Frontend: { Thymeleaf: 80, React: 80, HTML: 90, CSS: 85, Bootstrap: 75 },
-    Database: { MySQL: 84, PostgreSQL: 76, MongoDB: 68 },
-    Tools: { Git: 85, GitHub: 85, "IntelliJ IDEA": 90, Maven: 80, Postman: 82 },
+    Database: { MySQL: 85, PostgreSQL: 90, MongoDB: 70 },
+    Programming: { DSA: 95, OOPs: 90, "Competetive Programming": 80, "AI/ML": 75},
+    Tools: { GitHub: 85, Canva: 90, Postman: 82 },
   };
 
   return (
@@ -1146,7 +1146,7 @@ function Experience() {
                   className="text-sm mb-2"
                   style={{ color: "#A855F7", fontFamily: "Inter, sans-serif" }}
                 >
-                  Tech Solutions Pvt. Ltd.
+                  Dataman Computer Systems Pvt. Ltd.
                 </p>
                 <span
                   className="inline-block text-xs px-3 py-1 rounded-full"
@@ -1156,7 +1156,7 @@ function Experience() {
                     fontFamily: "Inter, sans-serif",
                   }}
                 >
-                  Jul 2022 – Present · 2 Years
+                  Aug 2025 – Present · 1+ Year
                 </span>
               </div>
 
@@ -1174,10 +1174,10 @@ function Experience() {
                   </h4>
                   <ul className="space-y-2">
                     {[
-                      "Designed and developed RESTful APIs using Spring Boot consumed by web and mobile clients",
-                      "Built Spring Security configurations with JWT-based authentication and role-based authorization",
-                      "Optimized Hibernate ORM queries achieving 40% reduction in database response times",
-                      "Collaborated in Agile sprints, code reviews, and technical design discussions",
+                      "Developed and maintained ERP software used by 100+ enterprise users for the paper industry using Next.js, creating responsive and scalable user interfaces.",
+                      "Built and integrated frontend components with REST APIs to support ERP modules such as inventory, production,and order management.",
+                      "Implemented authentication and role-based authorization, ensuring access control across different ERP user roles.",
+                      "Improved application performance by optimizing frontend logic and reducing page load time by 30%, enhancing the overall user experience.",
                       "Integrated third-party payment gateways and SMS APIs for client projects",
                     ].map((item) => (
                       <li
