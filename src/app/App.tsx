@@ -748,7 +748,7 @@ function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
                 {
                   label: "AI",
                   color: "#FACC15",
-                  top: "110%",
+                  top: "105%",
                   right: "30%",
                 },
                 {
@@ -813,7 +813,7 @@ function About() {
   ];
 
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-14 px-6">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <SectionLabel label="About Me" />
@@ -1013,7 +1013,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="py-24 px-6"
+      className="py-14 px-6"
       style={{ background: "rgba(19,15,36,0.3)" }}
     >
       <div className="max-w-7xl mx-auto">
@@ -1108,7 +1108,7 @@ function SkillBar({ level, color }: { level: number; color: string }) {
 
 function Experience() {
   return (
-    <section id="experience" className="py-24 px-6">
+    <section id="experience" className="py-14 px-6">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <SectionLabel label="Experience" />
@@ -1178,7 +1178,7 @@ function Experience() {
                       "Built and integrated frontend components with REST APIs to support ERP modules such as inventory, production,and order management.",
                       "Implemented authentication and role-based authorization, ensuring access control across different ERP user roles.",
                       "Improved application performance by optimizing frontend logic and reducing page load time by 30%, enhancing the overall user experience.",
-                      "Integrated third-party payment gateways and SMS APIs for client projects",
+                      "Collaborated on backend development using Node.js and ASP.NET, worked with SQL databases, and used Git for version control during feature development and deployment",
                     ].map((item) => (
                       <li
                         key={item}
@@ -1282,7 +1282,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="py-24 px-6"
+      className="py-14 px-6"
       style={{ background: "rgba(19,15,36,0.3)" }}
     >
       <div className="max-w-7xl mx-auto">
@@ -2018,7 +2018,7 @@ function Services({
   onServiceClick: (s: ServiceType) => void;
 }) {
   return (
-    <section id="services" className="py-24 px-6">
+    <section id="services" className="py-14 px-6">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <SectionLabel label="Services" />
@@ -2078,8 +2078,8 @@ function Education() {
   const items = [
     {
       degree: "B.Tech — Computer Science & Engineering",
-      institution: "Apollo Institute of Technology, Kanpur",
-      year: "2023 – 2026",
+      institution: "Chhatrapati Sahuji Maharaj University, Kanpur",
+      year: "2021 – 2025",
       gpa: "7.8 CGPA",
       icon: <GraduationCap size={20} />,
       color: "#EC4899",
@@ -2088,20 +2088,8 @@ function Education() {
         "Database Management",
         "Software Engineering",
         "Operating Systems",
-      ],
-    },
-    {
-      degree: "Diploma — Computer Engineering",
-      institution: "Govt. Polytechnic College, U.P.",
-      year: "2020 – 2023",
-      gpa: "75%",
-      icon: <Terminal size={20} />,
-      color: "#34D399",
-      highlights: [
-        "Programming Fundamentals",
-        "Networking Basics",
-        "Web Technologies",
-        "Electronics",
+        "Machine Learning",
+        "Artificial Intelligence"
       ],
     },
   ];
@@ -2109,7 +2097,7 @@ function Education() {
   return (
     <section
       id="education"
-      className="py-24 px-6"
+      className="py-14 px-6"
       style={{ background: "rgba(19,15,36,0.3)" }}
     >
       <div className="max-w-7xl mx-auto">
@@ -2202,7 +2190,7 @@ function Education() {
 
 function Certifications() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-14 px-6">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <SectionLabel label="Certifications" />
@@ -2286,7 +2274,7 @@ function Contact() {
     try {
       setLoading(true);
       const res = await fetch(
-        "https://backend-nine-indol-10.vercel.app/contact",
+        "https://mail-backend-red.vercel.app/contact",
         {
           method: "POST",
           headers: {
@@ -2358,7 +2346,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 px-6"
+      className="py-14 px-6"
       style={{ background: "rgba(19,15,36,0.3)" }}
     >
       <div className="max-w-7xl mx-auto">
@@ -2559,13 +2547,13 @@ function Footer() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Bharti Rai
+            Adarsh Sahu
           </div>
           <p
             className="text-xs"
             style={{ color: "#9488B0", fontFamily: "Inter, sans-serif" }}
           >
-            Java Backend Developer · Kanpur, India
+            Software Engineer · Kanpur, India
           </p>
         </div>
 
@@ -2573,24 +2561,24 @@ function Footer() {
           className="text-xs text-center"
           style={{ color: "#9488B0", fontFamily: "Inter, sans-serif" }}
         >
-          © 2024 Bharti Rai. Built with Spring of passion.
+          © 2026 Adarsh Sahu. Built with Spring of passion. All rights reserved
         </p>
 
         <div className="flex items-center gap-4">
           {[
             {
               icon: <Github size={18} />,
-              href: "https://github.com/BhartiRai111",
+              href: "https://github.com/yaarAdarsh",
               label: "GitHub",
             },
             {
               icon: <Linkedin size={18} />,
-              href: "https://www.linkedin.com/in/er-bharti-rai-b58454227",
+              href: "https://www.linkedin.com/in/adarshsahu1310/",
               label: "LinkedIn",
             },
             {
               icon: <Mail size={18} />,
-              href: "mailto:bhartiraivns235@email.com",
+              href: "mailto:adarshsahu1310@email.com",
               label: "Email",
             },
           ].map((s) => (
