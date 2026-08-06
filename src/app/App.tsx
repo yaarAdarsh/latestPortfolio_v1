@@ -149,8 +149,8 @@ const projects = [
 
 const downloadResume = () => {
   const link = document.createElement("a");
-  link.href = "/New_ATS_Resume.pdf"; // public folder me PDF ka naam
-  link.download = "Bharti_Rai_Resume.pdf";
+  link.href = "/RishiResume1.pdf"; // public folder me PDF ka naam
+  link.download = "Adarsh_Sahu_Resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
